@@ -57,7 +57,7 @@ export class LifecycleComponent implements OnInit,
    * and after AfterViewChecked
    */
   ngDoCheck(): void {
-    this._handleAddEventLifecycle('doCheck')
+    // this._handleAddEventLifecycle('doCheck')
   }
 
 
@@ -72,7 +72,7 @@ export class LifecycleComponent implements OnInit,
    * after AfterContentInit
    */
   ngAfterContentChecked(): void {
-    this._handleAddEventLifecycle('afterContentChecked')
+    // this._handleAddEventLifecycle('afterContentChecked')
   }
 
   /**
@@ -86,7 +86,7 @@ export class LifecycleComponent implements OnInit,
    * after ngAfterViewInit 
    */
   ngAfterViewChecked(): void {
-    this._handleAddEventLifecycle('AfterViewChecked')
+    // this._handleAddEventLifecycle('AfterViewChecked')
   }
 
   ngOnDestroy(): void {
