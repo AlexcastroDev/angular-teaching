@@ -13,6 +13,7 @@ import { NgrxReactiveComponent } from './ngrx-reactive/ngrx-reactive.component';
 import { appReducer } from './store';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { ComponentWithChildrenComponent } from './component-with-children/component-with-children.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
     LifecycleComponent,
     DataBindingComponent,
     NgrxExampleComponent,
-    NgrxReactiveComponent
+    NgrxReactiveComponent,
+    ComponentWithChildrenComponent,
   ],
   imports: [
     BrowserModule,
