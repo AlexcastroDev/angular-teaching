@@ -9,6 +9,9 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgrxExampleComponent } from './ngrx-example/ngrx-example.component';
 import { NgrxReactiveComponent } from './ngrx-reactive/ngrx-reactive.component';
 
+// Modules
+import { RandomModuleModule } from './random-module/random-module.module';
+
 // Store
 import { appReducer } from './store';
 import { StoreModule } from '@ngrx/store';
@@ -28,7 +31,8 @@ import { ComponentWithChildrenComponent } from './component-with-children/compon
     BrowserModule,
     FormsModule,
     StoreModule.forRoot({ app: appReducer}),
-    StoreDevtoolsModule.instrument()
+    StoreDevtoolsModule.instrument(),
+    RandomModuleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
